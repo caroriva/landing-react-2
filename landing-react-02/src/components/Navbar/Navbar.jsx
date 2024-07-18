@@ -10,22 +10,18 @@ function Navbar() {
   return (
     <header className="navbar">
       <nav className="navbar__container wrapper">
-        <a
-          href="#company"
-          className="navbar__logo"
-          onClick={() => setshowNav(false)}
-        >
+        <a href="#" className="navbar__logo" onClick={() => setshowNav(false)}>
           <img src={Logo} alt="logo" />
         </a>
         <ul className={`${showNav ? "show" : ""}`}>
           <li>
-            <a href="#company">company</a>
+            <a href="#">company</a>
           </li>
           <li>
-            <a href="#products">crypto</a>
+            <a href="#products">cryptos</a>
           </li>
           <li>
-            <a href="#">pricing</a>
+            <a href="#">contact us</a>
           </li>
         </ul>
         <div className="navbar__btns">

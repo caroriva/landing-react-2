@@ -3,7 +3,7 @@ import Mob from "../../assets/Mob.png";
 
 function Hero() {
   return (
-    <section className="hero" id="company">
+    <section className="hero">
       <div className="hero__container wrapper">
         <div className="hero__left">
           <img src={Mob} alt="hero" />
@@ -14,7 +14,7 @@ function Hero() {
             Our cryptocurrency offers a fast, secure, and affordable alternative
             for all of your financial needs. Join the cryptocurrency revolution
             today and take control of your financial future. Sign up now to
-            start using our platform for yourself
+            start using our platform for yourself.
           </p>
           <a href="#" className="btn">
             TRY FOR FREE
