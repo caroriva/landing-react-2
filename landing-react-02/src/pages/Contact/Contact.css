@@ -1,11 +1,19 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--black);
+  text-align: center;
+}
+
 .contact__form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: auto;
   max-width: 500px;
   padding: 2rem;
+  gap: 0.8rem;
 }
 
 .contact__form h1 {
@@ -17,7 +25,6 @@
 .form__input {
   width: 100%;
   padding: 0.75rem;
-  margin-bottom: 1rem;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -25,4 +32,8 @@
 
 .form__input::placeholder {
   color: var(--gray);
+}
+
+.contact__form a {
+  margin-top: 1.2rem;
 }

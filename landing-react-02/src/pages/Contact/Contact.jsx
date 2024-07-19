@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Contact() {
   return (
-    <>
+    <div className="contact">
       <form class="contact__form">
         <h1>Contact Us</h1>
         <input type="text" placeholder="Name" className="form__input" />
@@ -14,7 +14,7 @@ function Contact() {
           SEND
         </Link>
       </form>
-    </>
+    </div>
   );
 }
 
