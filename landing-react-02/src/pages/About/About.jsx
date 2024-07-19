@@ -1,5 +1,6 @@
 // import Navbar from "../../components/Navbar/Navbar";
 import "./About.css";
+import { FaShieldAlt, FaBolt, FaWallet } from "react-icons/fa";
 
 function About() {
   return (
@@ -22,6 +23,7 @@ function About() {
             <h2>Why Choose Us?</h2>
             <div className="cards__container">
               <div className="card">
+                <FaShieldAlt className="card__icon" />
                 <h3 className="card__title">Security</h3>
                 <p className="card__description">
                   Our platform employs state-of-the-art security measures to
@@ -30,6 +32,7 @@ function About() {
                 </p>
               </div>
               <div className="card">
+                <FaBolt className="card__icon" />
                 <h3 className="card__title">Speed</h3>
                 <p className="card__description">
                   Transactions on our platform are processed quickly, ensuring
@@ -38,6 +41,7 @@ function About() {
                 </p>
               </div>
               <div className="card">
+                <FaWallet className="card__icon" />
                 <h3 className="card__title">Affordability</h3>
                 <p className="card__description">
                   We offer competitive rates and minimal fees, making
