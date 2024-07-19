@@ -19,7 +19,7 @@ function Navbar() {
             <NavLink to="about">company</NavLink>
           </li>
           <li>
-            <a href="#products">cryptos</a>
+            <NavLink to="products">cryptos</NavLink>
           </li>
           <li>
             <NavLink to="contact">contact us</NavLink>
