@@ -9,6 +9,8 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer className="footer">
@@ -18,7 +20,7 @@ function Footer() {
         </div>
         <div className="footer__col">
           <h3>About</h3>
-          <a href="#">about us</a>
+          <Link to="about">about us</Link>
           <a href="#">features</a>
           <a href="#">news</a>
         </div>
@@ -32,7 +34,7 @@ function Footer() {
           <h3>Support</h3>
           <a href="#">FAQs</a>
           <a href="#">Support</a>
-          <a href="#">Contact us</a>
+          <Link to="contact">Contact us</Link>
         </div>
         <div className="footer__col">
           <h3>Socials</h3>
