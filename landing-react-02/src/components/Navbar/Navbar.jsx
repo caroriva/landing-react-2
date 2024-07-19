@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   const [showNav, setshowNav] = useState(false);
@@ -10,18 +11,18 @@ function Navbar() {
   return (
     <header className="navbar">
       <nav className="navbar__container wrapper">
-        <a href="#" className="navbar__logo" onClick={() => setshowNav(false)}>
+        <Link to="/" className="navbar__logo" onClick={() => setshowNav(false)}>
           <img src={Logo} alt="logo" />
-        </a>
+        </Link>
         <ul className={`${showNav ? "show" : ""}`}>
           <li>
-            <a href="#">company</a>
+            <NavLink to="about">company</NavLink>
           </li>
           <li>
             <a href="#products">cryptos</a>
           </li>
           <li>
-            <a href="#">contact us</a>
+            <NavLink to="contact">contact us</NavLink>
           </li>
         </ul>
         <div className="navbar__btns">

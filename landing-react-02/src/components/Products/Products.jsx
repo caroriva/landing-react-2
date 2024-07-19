@@ -2,6 +2,7 @@ import "./Products.css";
 import Icon1 from "../../assets/icon-1.png";
 import Icon2 from "../../assets/icon-2.png";
 import Icon3 from "../../assets/icon-3.png";
+import { Link } from "react-router-dom";
 
 function Products() {
   return (
@@ -34,9 +35,9 @@ function Products() {
         </div>
       </div>
       <div className="more__btn">
-        <a href="#" className="btn">
+        <Link to="products" className="btn">
           SEE MORE
-        </a>
+        </Link>
       </div>
     </section>
   );
