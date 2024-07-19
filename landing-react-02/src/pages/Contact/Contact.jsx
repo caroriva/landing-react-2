@@ -1,7 +1,21 @@
-import React from "react";
+import "./Contact.css";
+import { Link } from "react-router-dom";
 
 function Contact() {
-  return <div>Contact</div>;
+  return (
+    <>
+      <form class="contact__form">
+        <h1>Contact Us</h1>
+        <input type="text" placeholder="Name" className="form__input" />
+        <input type="text" placeholder="Lastname" className="form__input" />
+        <input type="email" placeholder="Email" className="form__input" />
+        <input type="text" placeholder="Subject" className="form__input" />
+        <Link to="/" className="btn">
+          SEND
+        </Link>
+      </form>
+    </>
+  );
 }
 
 export default Contact;
