@@ -4,7 +4,14 @@
   --black: #151515;
   --eerie-black: #1b1b1b;
   --black-olive: #383f3e;
-  --gradient: #3fe8ab;
+  --gradient: linear-gradient(
+    to right,
+    #3fe8ab,
+    #40e2ba,
+    #4edcc5,
+    #62d5cb,
+    #78cdcd
+  );
 }
 
 html {
@@ -50,7 +57,7 @@ h6 {
 }
 
 .btn {
-  background-color: var(--gradient);
+  background: var(--gradient);
   padding: 0.6rem 1.2rem;
   color: var(--black);
   border-radius: 0.5rem;

@@ -53,7 +53,7 @@
 }
 
 .footer__icon:hover {
-  background-color: var(--gradient);
+  background-color: #3fe8ab;
 }
 
 @media (max-width: 854px) {

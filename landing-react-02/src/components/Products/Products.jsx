@@ -1,7 +1,6 @@
 import "./Products.css";
-import Icon1 from "../../assets/icon-1.png";
-import Icon2 from "../../assets/icon-2.png";
-import Icon3 from "../../assets/icon-3.png";
+import { SiBitcoin, SiEthereum, SiRipple } from "react-icons/si";
+
 import { Link } from "react-router-dom";
 
 function Products() {
@@ -10,7 +9,7 @@ function Products() {
       <h2>Our Cryptos</h2>
       <div className="product__container wrapper">
         <div className="product__card">
-          <img src={Icon1} alt="bitcoin" />
+          <SiBitcoin className="product__icon" />
           <h3>Bitcoin</h3>
           <span>$57229</span>
           <a href="#" className="btn">
@@ -18,7 +17,7 @@ function Products() {
           </a>
         </div>
         <div className="product__card">
-          <img src={Icon2} alt="ethereum" />
+          <SiEthereum className="product__icon" />
           <h3>Ethereum</h3>
           <span>$3023</span>
           <a href="#" className="btn">
@@ -26,7 +25,7 @@ function Products() {
           </a>
         </div>
         <div className="product__card">
-          <img src={Icon3} alt="ripple" />
+          <SiRipple className="product__icon" />
           <h3>Ripple</h3>
           <span>$13,9</span>
           <a href="#" className="btn">

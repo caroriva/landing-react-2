@@ -24,16 +24,18 @@ h2 {
 .product__card {
   background-color: var(--black);
   text-align: center;
-  padding: 4rem;
+  padding: 3rem;
   width: 280px;
   border-radius: 2rem;
   margin-bottom: 2.5rem;
   border: 1px solid var(--black-olive);
 }
 
-.product__card img {
+.product__icon {
   margin-inline: auto;
-  width: 5rem;
+  font-size: 5rem;
+  color: aquamarine;
+  opacity: 55%;
 }
 
 .product__card h3 {
@@ -52,15 +54,4 @@ h2 {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-}
-
-.more__btn a {
-  background-color: var(--black);
-  border: 1px solid var(--black-olive);
-  color: var(--white);
-  transition: all 0.3s ease;
-}
-
-.more__btn a:hover {
-  background-color: var(--gradient);
 }
