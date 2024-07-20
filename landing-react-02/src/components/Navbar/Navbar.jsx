@@ -16,13 +16,19 @@ function Navbar() {
         </Link>
         <ul className={`${showNav ? "show" : ""}`}>
           <li>
-            <NavLink to="about">company</NavLink>
+            <NavLink to="about" onClick={() => setshowNav(!showNav)}>
+              company
+            </NavLink>
           </li>
           <li>
-            <NavLink to="products">cryptos</NavLink>
+            <NavLink to="products" onClick={() => setshowNav(!showNav)}>
+              cryptos
+            </NavLink>
           </li>
           <li>
-            <NavLink to="contact">contact us</NavLink>
+            <NavLink to="contact" onClick={() => setshowNav(!showNav)}>
+              contact us
+            </NavLink>
           </li>
         </ul>
         <div className="navbar__btns">
